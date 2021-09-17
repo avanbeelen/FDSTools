@@ -24,9 +24,11 @@
 Name microhaplotypes.
 
 Adds a new column 'microhaplotype' to the output, which contains the
-base calls on given microahplotype positions. The POSITIONS file should
+base calls on given microhaplotype positions. The POSITIONS file should
 contain two tab-separated values on each line: a marker name and a
-position number.
+genomic position number (without chromosome number). If there is no
+[genome_position] set in the library file, the first nucleotide in the
+target fragment is position 1.
 """
 import argparse
 import re
