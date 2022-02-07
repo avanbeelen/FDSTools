@@ -7,7 +7,10 @@
 name: Lint Code Base
 
 on:
-  [push, pull_request]
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   run-lint:
